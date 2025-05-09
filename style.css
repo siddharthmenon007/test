@@ -1,14 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background: #fff;
 }
 header {
   background: #003366;
   color: white;
   padding: 1rem;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 nav a {
   color: white;
@@ -16,9 +23,10 @@ nav a {
   text-decoration: none;
 }
 .hero {
-  background: #f4f4f4;
-  padding: 2rem;
+  background: linear-gradient(#f4f4f4, #e0e0e0);
+  padding: 3rem 1rem;
   text-align: center;
+  transition: transform 0.3s ease;
 }
 .btn {
   display: inline-block;
@@ -33,6 +41,13 @@ section {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 form input,
 form textarea {

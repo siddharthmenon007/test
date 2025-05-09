@@ -2,3 +2,15 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
   alert("Thanks! We'll get back to you soon.");
 });
+
+// Animate sections on scroll
+const sections = document.querySelectorAll("section");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.1 });
+
+sections.forEach(section => observer.observe(section));

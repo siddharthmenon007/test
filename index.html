@@ -13,6 +13,7 @@
       <a href="#hero">Home</a>
       <a href="#services">Services</a>
       <a href="#testimonials">Testimonials</a>
+      <a href="#gallery">Gallery</a>
       <a href="#faq">FAQ</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -20,40 +21,55 @@
   </header>
 
   <section class="hero" id="hero">
-    <h2>Learn to Drive Safely</h2>
-    <p>Professional, certified instructors. Flexible timing. Affordable prices.</p>
-    <a href="#contact" class="btn">Book a Lesson</a>
+    <video autoplay muted loop id="bgVideo">
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="hero-content">
+      <h2>Drive Confidently with SafeDrive</h2>
+      <p>Join 2000+ students who have earned their license with us.</p>
+      <a href="#contact" class="btn">Book a Lesson</a>
+    </div>
   </section>
 
   <section id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>Beginner Driving Lessons</li>
-      <li>Refresher Courses</li>
-      <li>Road Test Preparation</li>
-      <li>Defensive Driving Techniques</li>
+      <li>🚗 Beginner Lessons with dual-control cars</li>
+      <li>🛣️ Highway & Night Driving</li>
+      <li>📋 Road Test Packages</li>
+      <li>🎯 Defensive Driving Courses</li>
     </ul>
   </section>
 
   <section id="testimonials">
-    <h2>Student Testimonials</h2>
-    <blockquote>"I passed on my first try! The instructors are amazing." – Alex</blockquote>
-    <blockquote>"Very professional and supportive. Highly recommend!" – Maria</blockquote>
+    <h2>What Our Students Say</h2>
+    <blockquote>"Passed my G2 on the first try! Friendly and calm instructors." – Jane K.</blockquote>
+    <blockquote>"I felt confident and safe every step of the way. Great school!" – Rahim D.</blockquote>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Students in Action</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Lesson+1" alt="Lesson 1" />
+      <img src="https://via.placeholder.com/300x200?text=On+the+Road" alt="On the Road" />
+      <img src="https://via.placeholder.com/300x200?text=Test+Day" alt="Test Day" />
+    </div>
   </section>
 
   <section id="faq">
-    <h2>Frequently Asked Questions</h2>
+    <h2>FAQs</h2>
     <dl>
-      <dt>How do I schedule a lesson?</dt>
-      <dd>Use the contact form below or call us directly.</dd>
-      <dt>What are your lesson rates?</dt>
-      <dd>We offer competitive packages starting from $30/hour.</dd>
+      <dt>Do you offer weekend lessons?</dt>
+      <dd>Yes, we operate 7 days a week to fit your schedule.</dd>
+      <dt>Where are you located?</dt>
+      <dd>We serve multiple locations across the city. Contact us for details.</dd>
     </dl>
   </section>
 
   <section id="about">
-    <h2>About Us</h2>
-    <p>We’ve helped over 2,000 students become confident, safe drivers. Our team is licensed, friendly, and patient.</p>
+    <h2>About SafeDrive</h2>
+    <p>We are a certified driving school with a mission to make the roads safer. All our instructors are government licensed and passionate about teaching safe driving skills.</p>
   </section>
 
   <section id="contact">
@@ -67,7 +83,9 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 SafeDrive Driving School</p>
+    <p>&copy; 2025 SafeDrive Driving School | Follow us on 
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    </p>
   </footer>
 
   <script src="script.js"></script>
